@@ -1,0 +1,20 @@
+<!-- Generated template for the BubbleContainerComponent component -->
+
+<div class="bubbleContainer">
+
+  <bubble *ngFor="let item of items; index as i" id="{{ 'bubble-' + (i+1) }}"
+          [bubbleParams]="bubbleParamsArr[i]"></bubble>
+</div>
+
+
+<ion-footer>
+
+  <button ion-button block (click)="btnShuffleClick()">
+    Shuffle
+  </button>
+  <button ion-button block (click)="positionBubbles(188, 240)">
+    Re-Position
+  </button>
+</ion-footer>
+
+
